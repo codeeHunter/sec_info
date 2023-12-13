@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encryption/Decryption Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Encryption/Decryption Form</h1>
+
+    <form id="cryptoForm">
+      <label for="p">p:</label>
+      <input type="text" id="p" value="593" />
+
+      <label for="g">g:</label>
+      <input type="text" id="g" value="123" />
+
+      <label for="x">x:</label>
+      <input type="text" id="x" value="8" />
+
+      <label for="inputText">Input Text:</label>
+      <input type="text" id="inputText" value="Hello, World!" />
+
+      <button type="button" onclick="encryptAndDecrypt()">
+        Encrypt/Decrypt
+      </button>
+
+      <textarea id="encryptText" cols="30" rows="10" readonly></textarea>
+      <textarea id="decryptText" cols="30" rows="10" readonly></textarea>
+    </form>
+
+    <script src="main.js"></script>
+  </body>
+</html>

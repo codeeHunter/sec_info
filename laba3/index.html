@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DES Шифр и Дешифратор</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DES Шифр и Дешифратор</h1>
+        <div class="input">
+            <textarea id="inputText" placeholder="Введите текст для шифрования/дешифрования"></textarea>
+        </div>
+        <div class="buttons">
+            <button onclick="EncryptText()">Зашифровать</button>
+            <button onclick="DecryptText()">Дешифровать</button>
+        </div>
+        <div class="output">
+            <textarea id="outputText" placeholder="Результат"></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

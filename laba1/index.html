@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Первая лаба (Одноалфавитный)</title>
+    <style>
+      button {
+        margin-top: 10px;
+        background: greenyellow;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      input {
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      .cypher,
+      .decrypt,
+      .hack {
+        width: 300px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        overflow-y: auto;
+        word-break: break-all;
+        border: 1px solid black;
+        border-radius: 5%;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class=""
+      style="
+        width: 300px;
+        height: 50vh;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      "
+    >
+      <div>
+        <h1>Зашифруйте строку!</h1>
+      </div>
+      <label for="cypher">
+        <input type="text" id="word" placeholder="Введите шифр" />
+        <span class="word__error" style="display: none; color: red"
+          >НЕЛЬЗЯ ВВОДИТЬ ЧИСЛО</span
+        >
+      </label>
+      <button class="btn__cypher" onClick="getCypher()">Зашифровать</button>
+      <span
+        style="
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          margin: 0 auto;
+        "
+        >Зашифрованное строка:</span
+      >
+      <span class="cypher"></span>
+      <button class="btn__decrpyt" onClick="getDecrypt()">Дешифровать</button>
+      <span
+        style="
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          margin: 0 auto;
+        "
+        >Дешифрованная строка:</span
+      >
+      <span class="decrypt"></span>
+
+      <button class="btn__decrpyt" onClick="hacker()">Хакнуть!</button>
+
+      <span class="hack"></span>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
